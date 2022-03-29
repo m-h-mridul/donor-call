@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "351420364959",
+    "project_id": "collageblooddonation",
+    "storage_bucket": "collageblooddonation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351420364959:android:05ca88fec44c5b36700aaa",
+        "android_client_info": {
+          "package_name": "com.example.blood_donation_collage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351420364959-v49m004a408skpl7n5utjfr3itbssl21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blood_donation_collage",
+            "certificate_hash": "5402c91623169ee8be3adfc570570832e8e2dbcb"
+          }
+        },
+        {
+          "client_id": "351420364959-sk77q545rflf2erabicotverljcc0roo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrcRi_I1Jz8hH7pLaqzsJha41p5prRi7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351420364959-sk77q545rflf2erabicotverljcc0roo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
