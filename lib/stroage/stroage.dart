@@ -1,5 +1,5 @@
 import 'package:blood_donation_collage/helper/callingname.dart';
-import 'package:blood_donation_collage/screen/registation/model/model_Userinformation.dart';
+import 'package:blood_donation_collage/model/model_Userinformation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Stroage {

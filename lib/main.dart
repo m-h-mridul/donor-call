@@ -1,19 +1,19 @@
 // ignore_for_file: prefer_const_constructors, unused_element
-import 'package:blood_donation_collage/screen/ambulance%20booking/view/ambulancebookingui.dart';
-import 'package:blood_donation_collage/screen/ambulance/view/ambulanceui.dart';
-import 'package:blood_donation_collage/screen/blood%20bank/view/bloodbankui.dart';
-import 'package:blood_donation_collage/screen/dashboard/Dashboard.dart';
-import 'package:blood_donation_collage/screen/doctor/view/DoctorUI.dart';
-import 'package:blood_donation_collage/screen/health%20news/healthwebview.dart';
-import 'package:blood_donation_collage/screen/home/home.dart';
-import 'package:blood_donation_collage/screen/hospital%20emergency/view/hosipitalemergecy.dart';
-import 'package:blood_donation_collage/screen/log-in/log-in.dart';
-import 'package:blood_donation_collage/screen/notification/view/notfificationUI.dart';
-import 'package:blood_donation_collage/screen/pageview/view/pageviewr.dart';
-import 'package:blood_donation_collage/screen/registation/Registation.dart';
-import 'package:blood_donation_collage/screen/request%20make/request.dart';
-import 'package:blood_donation_collage/screen/reset%20password/resetPassword.dart';
-import 'package:blood_donation_collage/screen/splashscreen/splash_screen.dart';
+import 'package:blood_donation_collage/view/screen/ambulancebookingui.dart';
+import 'package:blood_donation_collage/view/screen/ambulanceui.dart';
+import 'package:blood_donation_collage/view/screen/bloodbankui.dart';
+import 'package:blood_donation_collage/view/screen/Dashboard.dart';
+import 'package:blood_donation_collage/view/screen/DoctorUI.dart';
+import 'package:blood_donation_collage/view/screen/healthwebview.dart';
+import 'package:blood_donation_collage/view/screen/home.dart';
+import 'package:blood_donation_collage/view/screen/hosipitalemergecy.dart';
+import 'package:blood_donation_collage/view/screen/log-in.dart';
+import 'package:blood_donation_collage/view/screen/notfificationUI.dart';
+import 'package:blood_donation_collage/view/screen/pageviewr.dart';
+import 'package:blood_donation_collage/view/screen/Registation.dart';
+import 'package:blood_donation_collage/view/screen/request.dart';
+import 'package:blood_donation_collage/view/screen/resetPassword.dart';
+import 'package:blood_donation_collage/view/screen/splash_screen.dart';
 import 'package:blood_donation_collage/stroage/stroage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -21,10 +21,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/route_manager.dart';
-import 'screen/Donar request view/DonarRequest.dart';
-import 'screen/forget password/view/forgetui.dart';
-import 'screen/my request view/view/myrequestview.dart';
-import 'screen/search/Search.dart';
+import 'view/screen/DonarRequest.dart';
+import 'view/screen/forgetui.dart';
+import 'view/screen/myrequestview.dart';
+import 'view/screen/Search.dart';
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
     'high_importance_channel', // id
