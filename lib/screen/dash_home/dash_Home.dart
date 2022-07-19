@@ -4,16 +4,16 @@ import 'package:blood_donation_collage/design/Textstyle.dart';
 import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:blood_donation_collage/screen/ambulance/view/ambulanceui.dart';
 import 'package:blood_donation_collage/screen/hospital%20emergency/view/hosipitalemergecy.dart';
-import 'package:blood_donation_collage/screen/request/request.dart';
+import 'package:blood_donation_collage/screen/request%20make/request.dart';
 import 'package:blood_donation_collage/screen/search/Search.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import '../../design/text.dart';
 import '../../helper/internetconnectivity.dart';
 import '../blood bank/view/bloodbankui.dart';
 import '../doctor/view/DoctorUI.dart';
 import '../notification/view/notfificationUI.dart';
-import '../simmer ui/simmerui.dart';
 import '../tipsview/row data/RowDataAdd.dart';
 import '../tipsview/row data/healthtips.dart';
 import '../tipsview/tips_view.dart';
@@ -39,14 +39,16 @@ class Dash_home extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: MediaQuerypage.safeBlockHorizontal! * 2,
-                    vertical: MediaQuerypage.safeBlockVertical! * 0.5),
-                child: IconButton(
+          Padding(
+             padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuerypage.safeBlockHorizontal! * 4,
+                      vertical: MediaQuerypage.safeBlockVertical! * 0.5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment:CrossAxisAlignment.center,
+              children: [
+                Text(TextLine.dashboardHeadline,style:Textstyle.black18headline),
+                IconButton(
                   onPressed: () {
                     Get.to(() => NotificationUI());
                   },
@@ -55,13 +57,13 @@ class Dash_home extends StatelessWidget {
                     size: MediaQuerypage.pixel! * 11,
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           Center(
             child: Wrap(
               runSpacing: MediaQuerypage.smallSizeHeight! * 1.3,
-              spacing: MediaQuerypage.smallSizeWidth! * 2,
+              spacing: MediaQuerypage.smallSizeWidth! * 3.3,
               children: [
                 InkWell(
                   onTap: () {
@@ -220,9 +222,9 @@ class Dash_home extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(
-                vertical: MediaQuerypage.safeBlockVertical! * 2,
-                horizontal: MediaQuerypage.safeBlockHorizontal! * 5),
-            child: Text('Health tips', style: Textstyle.blackbold20),
+                vertical: MediaQuerypage.safeBlockVertical! * 1,
+                horizontal: MediaQuerypage.safeBlockHorizontal! * 4),
+            child: Text('Health tips', style: Textstyle.blackbold17),
           ),
           Expanded(
             child: ListView.separated(

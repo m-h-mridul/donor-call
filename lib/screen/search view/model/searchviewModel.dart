@@ -6,12 +6,14 @@ class SearchViewModel {
   String mobile='';
   String user_uid='';
   String location='';
+  String notes='';
   SearchViewModel({
     required this.name,
     required this.bloodGrope,
     required this.mobile,
     required this.user_uid,
     required this.location,
+    required this.notes,
   });
 
 }

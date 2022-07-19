@@ -126,7 +126,9 @@ class Search extends StatelessWidget {
                     style: Textstyle.whitebold18,
                   ),
                   onPressed: () {
-                    Modelrandow.area = area.text.toString().isEmpty?'Dhamondi':area.text.toString();
+                    Modelrandow.area = area.text.toString().isEmpty
+                        ? 'Dhamondi'
+                        : area.text.toString();
                     Modelrandow.bloodgrope = bloodgropeselected.value;
                     Modelrandow.location = location.text.toString();
                     Get.to(() => SearchViewUI());
@@ -134,30 +136,34 @@ class Search extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       primary: Colors.black,
                       padding: EdgeInsets.symmetric(
-                          horizontal: MediaQuerypage.safeBlockHorizontal! * 8,
-                          vertical: MediaQuerypage.safeBlockVertical! * 1.5),
-                      textStyle:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                          horizontal: MediaQuerypage.safeBlockHorizontal! * 5,
+                          vertical: MediaQuerypage.safeBlockVertical! * 1.0),
+                      textStyle: TextStyle(
+                          fontSize: MediaQuerypage.fontsize! * 18,
+                          fontWeight: FontWeight.bold)),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                    vertical: MediaQuerypage.safeBlockVertical! * 2),
+                    vertical: MediaQuerypage.safeBlockVertical! * 1),
                 child: ElevatedButton(
                   child: Text(
                     'Cancel',
-                    style: Textstyle.black18,
+                     style: Textstyle.whitebold18,
                   ),
                   onPressed: () {
                     Get.back();
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
-                      padding: EdgeInsets.symmetric(
-                          horizontal: MediaQuerypage.safeBlockHorizontal! * 8,
-                          vertical: MediaQuerypage.safeBlockVertical! * 1.5),
-                      textStyle:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                    primary: Colors.blueGrey,
+                    padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuerypage.safeBlockHorizontal! * 5,
+                        vertical: MediaQuerypage.safeBlockVertical! * 1.2),
+                    textStyle: TextStyle(
+                      fontSize: MediaQuerypage.fontsize! * 18,
+                      color: AppColor.white,
+                    ),
+                  ),
                 ),
               ),
             ],

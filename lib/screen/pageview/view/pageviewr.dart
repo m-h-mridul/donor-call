@@ -23,11 +23,12 @@ class Pagevier extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        // navigation bar color
-        statusBarColor: Colors.white,
-        statusBarIconBrightness: Brightness.dark,
-        systemNavigationBarIconBrightness: Brightness.dark // status bar color
-        ));
+      systemNavigationBarColor: Colors.white, 
+      systemNavigationBarDividerColor: Colors.black,// navigation bar color
+      statusBarColor: Colors.white,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarIconBrightness: Brightness.dark // status bar color
+      ));
     return SafeArea(
       child: Scaffold(
         body: PageView(

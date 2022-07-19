@@ -3,6 +3,7 @@
 import 'package:blood_donation_collage/design/Textstyle.dart';
 import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../model/campaineModel.dart';
 import '../model/datainsert.dart';
@@ -31,6 +32,12 @@ class BloodBankView extends StatelessWidget {
         appBar: AppBar(
           elevation: 1,
           backgroundColor: Colors.white,
+          leading: IconButton(
+            onPressed: () {
+              Get.back();
+            },
+            icon: Icon(Icons.arrow_back_ios_new),
+          ),
           title: const Text(
             'Blood Bank in Dhaka',
           ),

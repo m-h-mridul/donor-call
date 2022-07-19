@@ -5,22 +5,32 @@ import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:flutter/material.dart';
 
 class Textstyle {
-  static TextStyle bold32 = TextStyle(
+  static TextStyle blackbold32 = TextStyle(
       fontSize: MediaQuerypage.fontsize! * 32, fontWeight: FontWeight.bold);
+
   static TextStyle blackbold28 = TextStyle(
       fontSize: MediaQuerypage.fontsize! * 28, fontWeight: FontWeight.bold);
-      
-       static TextStyle blackbold20= TextStyle(
+
+  static TextStyle blackbold20 = TextStyle(
       fontSize: MediaQuerypage.fontsize! * 20, fontWeight: FontWeight.bold);
 
-  static TextStyle appcolor = TextStyle(color: AppColor.red_appcolor);
+  static TextStyle red16 = TextStyle(
+    color: AppColor.red_appcolor,
+    fontSize: MediaQuerypage.fontsize! * 16,
+  );
 
   static TextStyle black16 =
       TextStyle(fontSize: MediaQuerypage.fontsize! * 16, color: Colors.black);
-      static TextStyle only16 =
-      TextStyle(fontSize: MediaQuerypage.fontsize! * 16,);
+
+ 
+
   static TextStyle black18 =
       TextStyle(fontSize: MediaQuerypage.fontsize! * 18, color: Colors.black);
+
+  static TextStyle black18headline = TextStyle(
+      fontSize: MediaQuerypage.fontsize! * 18,
+      fontWeight: FontWeight.w600,
+      color: Colors.black);
 
   static TextStyle black = const TextStyle(color: Colors.black);
 
@@ -50,10 +60,20 @@ class Textstyle {
       fontWeight: FontWeight.bold,
       color: AppColor.red_appcolor);
 
+  static TextStyle redbold22 = TextStyle(
+      fontSize: MediaQuerypage.fontsize! * 18,
+      fontWeight: FontWeight.bold,
+      color: AppColor.red_appcolor);
+
   static TextStyle blackbold16 = TextStyle(
     color: Colors.black,
     fontSize: MediaQuerypage.fontsize! * 16,
     fontWeight: FontWeight.bold,
+  );
+  static TextStyle blackbold17 = TextStyle(
+    color: Colors.black,
+    fontSize: MediaQuerypage.fontsize! * 17,
+    fontWeight: FontWeight.w600,
   );
   static TextStyle whitebold16 = TextStyle(
     color: Colors.white,

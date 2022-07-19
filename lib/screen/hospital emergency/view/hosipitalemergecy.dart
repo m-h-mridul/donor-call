@@ -3,6 +3,7 @@
 import 'package:blood_donation_collage/design/Textstyle.dart';
 import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../model/datainsert.dart';
@@ -32,6 +33,12 @@ class HospitalEmergncy extends StatelessWidget {
         appBar: AppBar(
           elevation: 1,
           backgroundColor: Colors.white,
+          leading: IconButton(
+            onPressed: (){
+              Get.back();
+            },
+            icon: Icon(Icons.arrow_back_ios_new),
+          ),
           title: const Text("Emergency Hospital Name"),
         ),
         body: Padding(
@@ -54,15 +61,15 @@ class HospitalEmergncy extends StatelessWidget {
                     children: [
                       Text(
                         info.location,
-                        style: Textstyle.only16,
+                        style: Textstyle.black16,
                       ),
                       Text(
                         info.emergencynumber.toString(),
-                        style: Textstyle.only16,
+                        style: Textstyle.black16,
                       ),
                       Text(
                         '\n' + info.details,
-                        style: Textstyle.only16,
+                        style: Textstyle.black16,
                       )
                     ]),
                 trailing: IconButton(

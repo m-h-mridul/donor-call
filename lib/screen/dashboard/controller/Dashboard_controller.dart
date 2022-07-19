@@ -1,7 +1,6 @@
 // ignore_for_file: non_constant_identifier_names, file_names
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import '../../../main.dart';
@@ -9,7 +8,6 @@ import '../../../main.dart';
 class DashboardController extends GetxController {
   @override
   void onInit() {
-    print('from init');
     message_cheak();
     super.onInit();
   }

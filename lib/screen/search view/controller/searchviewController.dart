@@ -45,6 +45,7 @@ class SearchViewController extends GetxController {
               mobile: element.get(CallingName.mobile),
               name: element.get(CallingName.name),
               user_uid: element.get(CallingName.user_id),
+              notes:  element.get(CallingName.notes),
             ));
           }
         }

@@ -27,6 +27,18 @@ class AmbulanceUI extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: AppColor.white,
+          elevation: 1,
+          centerTitle: true,
+          title: const Text("Ambulanes Call & Booking"),
+          leading: IconButton(
+            onPressed: () {
+              Get.back();
+            },
+            icon: Icon(Icons.arrow_back_ios_new),
+          ),
+        ),
         body: Padding(
           padding: EdgeInsets.symmetric(
               vertical: MediaQuerypage.safeBlockVertical! * 1.5,

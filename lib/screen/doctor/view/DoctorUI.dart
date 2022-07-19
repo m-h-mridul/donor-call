@@ -1,6 +1,8 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:blood_donation_collage/design/appcolor.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../design/media_query.dart';
 import '../model/docotormodel.dart';
@@ -91,6 +93,17 @@ Fax: +88 02 9615497''',
 
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: AppColor.white,
+          elevation:1,
+          centerTitle: true,
+          title:const Text("Doctors Details"),
+          leading: IconButton(
+            onPressed: (){
+              Get.back();
+            },
+            icon: Icon(Icons.arrow_back_ios_new),
+          ),),
         body: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuerypage.safeBlockHorizontal! * 2,

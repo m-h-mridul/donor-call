@@ -4,8 +4,6 @@ import 'package:blood_donation_collage/design/Textstyle.dart';
 import 'package:blood_donation_collage/design/appcolor.dart';
 import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:blood_donation_collage/screen/registation/model/bloodmodel.dart';
-import 'package:blood_donation_collage/screen/request/controller/requestCOntroller.dart';
-import 'package:blood_donation_collage/screen/request/model/requestmodel.dart';
 import 'package:blood_donation_collage/screen/successful/Successful.dart';
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +11,8 @@ import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_rx/get_rx.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/route_manager.dart';
+import 'controller/requestCOntroller.dart';
+import 'model/requestmodel.dart';
 
 class Request extends StatelessWidget {
   Request({Key? key}) : super(key: key);
@@ -127,7 +127,7 @@ class Request extends StatelessWidget {
                           color: AppColor.red_appcolor,
                         ),
                         hintText: 'location',
-                        hintStyle: Textstyle.appcolor),
+                        hintStyle: Textstyle.red16),
                   ),
                   SizedBox(
                     height: MediaQuerypage.screenHeight! * 0.01,
@@ -154,7 +154,7 @@ class Request extends StatelessWidget {
                           color: AppColor.red_appcolor,
                         ),
                         hintText: 'Hospital Name',
-                        hintStyle: Textstyle.appcolor),
+                        hintStyle: Textstyle.red16),
                   ),
                   SizedBox(
                     height: MediaQuerypage.screenHeight! * 0.01,
@@ -180,7 +180,7 @@ class Request extends StatelessWidget {
                           color: AppColor.red_appcolor,
                         ),
                         hintText: 'Phone',
-                        hintStyle: Textstyle.appcolor),
+                        hintStyle: Textstyle.red16),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(
@@ -242,7 +242,7 @@ class Request extends StatelessWidget {
                           //   color: AppColor.red_appcolor,
                           // ),
                           hintText: 'Patient details',
-                          hintStyle: Textstyle.appcolor),
+                          hintStyle: Textstyle.red16),
                     ),
                   ),
                   SizedBox(
@@ -270,12 +270,14 @@ class Request extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           child: Text('Request', style: Textstyle.whitebold18),
-                          width: MediaQuerypage.screenWidth! * 0.4,
+                          width: MediaQuerypage.screenWidth! * 0.3,
                           height: MediaQuerypage.screenHeight! * 0.055,
                           decoration: BoxDecoration(
-                              color: AppColor.red_appcolor,
+                              color: Colors.black,
+
+                              //AppColor.red_appcolor,
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(13))),
+                                  BorderRadius.all(Radius.circular(7))),
                         ),
                       ),
                       Padding(
@@ -290,14 +292,13 @@ class Request extends StatelessWidget {
                             Get.back();
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 133, 129, 129),
-                              padding: EdgeInsets.symmetric(
-                                  horizontal:
-                                      MediaQuerypage.safeBlockHorizontal! * 8,
-                                  vertical:
-                                      MediaQuerypage.safeBlockVertical! * 1.5),
-                              textStyle: TextStyle(
-                                  fontSize: 30, fontWeight: FontWeight.bold)),
+                            primary: AppColor.bluegray,
+                            padding: EdgeInsets.symmetric(
+                                horizontal:
+                                    MediaQuerypage.safeBlockHorizontal! * 5,
+                                vertical:
+                                    MediaQuerypage.safeBlockVertical! * 1.1),
+                          ),
                         ),
                       ),
                     ],

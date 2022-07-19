@@ -26,7 +26,7 @@ class Dashboard extends StatelessWidget {
   // */
   final iconList = <IconData>[
     Icons.home_outlined,
-    Icons.feed,
+    Icons.newspaper,
     Icons.person_outline,
   ];
   //**
@@ -37,14 +37,14 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     //**status bar theam
     // */
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-          systemNavigationBarColor: Colors.white, // navigation bar color
-          statusBarIconBrightness: Brightness.dark,
-          statusBarColor: Colors.white, // n
-          systemNavigationBarIconBrightness: Brightness.dark // status bar color
-          ),
-    );
+     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.white, 
+      systemNavigationBarDividerColor: Colors.grey,// navigation bar color
+      statusBarColor: Colors.white,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarIconBrightness: Brightness.dark // status bar color
+      ));
+    
     return SafeArea(
       child: Scaffold(
         body: Obx(() => l[dashboardController.bottom_view.value]),
@@ -55,8 +55,8 @@ class Dashboard extends StatelessWidget {
             activeIndex: dashboardController.bottom_view.value,
             gapLocation: GapLocation.none,
             notchSmoothness: NotchSmoothness.verySmoothEdge,
-            leftCornerRadius: MediaQuerypage.pixel! * 26,
-            rightCornerRadius: MediaQuerypage.pixel! * 26,
+            leftCornerRadius: MediaQuerypage.pixel! * 1,
+            rightCornerRadius: MediaQuerypage.pixel! * 1,
             onTap: (index) {
               dashboardController.onbottomview_change(index);
             },

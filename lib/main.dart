@@ -4,7 +4,6 @@ import 'package:blood_donation_collage/screen/ambulance/view/ambulanceui.dart';
 import 'package:blood_donation_collage/screen/blood%20bank/view/bloodbankui.dart';
 import 'package:blood_donation_collage/screen/dashboard/Dashboard.dart';
 import 'package:blood_donation_collage/screen/doctor/view/DoctorUI.dart';
-import 'package:blood_donation_collage/screen/forget/view/forgetui.dart';
 import 'package:blood_donation_collage/screen/health%20news/healthwebview.dart';
 import 'package:blood_donation_collage/screen/home/home.dart';
 import 'package:blood_donation_collage/screen/hospital%20emergency/view/hosipitalemergecy.dart';
@@ -12,7 +11,7 @@ import 'package:blood_donation_collage/screen/log-in/log-in.dart';
 import 'package:blood_donation_collage/screen/notification/view/notfificationUI.dart';
 import 'package:blood_donation_collage/screen/pageview/view/pageviewr.dart';
 import 'package:blood_donation_collage/screen/registation/Registation.dart';
-import 'package:blood_donation_collage/screen/request/request.dart';
+import 'package:blood_donation_collage/screen/request%20make/request.dart';
 import 'package:blood_donation_collage/screen/reset%20password/resetPassword.dart';
 import 'package:blood_donation_collage/screen/splashscreen/splash_screen.dart';
 import 'package:blood_donation_collage/stroage/stroage.dart';
@@ -23,6 +22,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/route_manager.dart';
 import 'screen/Donar request view/DonarRequest.dart';
+import 'screen/forget password/view/forgetui.dart';
 import 'screen/my request view/view/myrequestview.dart';
 import 'screen/search/Search.dart';
 
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
           DonarRequest_View.name: (context) => DonarRequest_View(),
           MyRequest_View.name: (context) => MyRequest_View(),
           Search.name: (context) => Search(),
-          ForgetUI.name: (context) => ForgetUI(),
+          ForgetPasswordUI.name: (context) => ForgetPasswordUI(),
           NotificationUI.name: (context) => NotificationUI()
         });
   }

@@ -8,8 +8,8 @@ import 'package:get/get.dart';
 import '../../../design/media_query.dart';
 import '../controller/forgetcontroller.dart';
 
-class ForgetUI extends StatelessWidget {
-  ForgetUI({Key? key}) : super(key: key);
+class ForgetPasswordUI extends StatelessWidget {
+  ForgetPasswordUI({Key? key}) : super(key: key);
   static const name = 'forgetui';
   TextEditingController email = TextEditingController();
   ForgetController cn = ForgetController();
@@ -37,7 +37,7 @@ class ForgetUI extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Enter email addess for reset password',
+                'Enter email address for reset password',
                 style: Textstyle.blackbold20,
               ),
               Padding(

@@ -4,7 +4,6 @@ import 'package:blood_donation_collage/design/Textstyle.dart';
 import 'package:blood_donation_collage/design/appcolor.dart';
 import 'package:blood_donation_collage/design/media_query.dart';
 import 'package:blood_donation_collage/screen/dashboard/Dashboard.dart';
-import 'package:blood_donation_collage/screen/forget/view/forgetui.dart';
 import 'package:blood_donation_collage/screen/log-in/controller/logincontroller.dart';
 import 'package:blood_donation_collage/screen/registation/model/model_Userinformation.dart';
 import 'package:blood_donation_collage/stroage/stroage.dart';
@@ -13,6 +12,8 @@ import 'package:flutter_progress_hud/flutter_progress_hud.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/route_manager.dart';
+
+import '../forget password/view/forgetui.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -154,7 +155,7 @@ class Login extends StatelessWidget {
                             MediaQuerypage.safeBlockVertical! * 2),
                         child: TextButton(
                           onPressed: () {
-                            Get.toNamed(ForgetUI.name);
+                            Get.toNamed(ForgetPasswordUI.name);
                           },
                           child: Text(
                             'Forget Password',

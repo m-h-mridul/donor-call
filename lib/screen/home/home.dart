@@ -38,6 +38,7 @@ class Home extends StatelessWidget {
                     vertical: MediaQuerypage.safeBlockHorizontal! * 5),
                 child: Text(
                   'You can donate for ones in need and\n request blood if you need.',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: MediaQuerypage.fontsize! * 15,
                       color: AppColor.grey),
